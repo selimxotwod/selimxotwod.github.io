@@ -1,1 +1,0 @@
-# selimxotwod.github.io
