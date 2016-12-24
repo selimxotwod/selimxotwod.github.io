@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Youtube DJ</title>
+    <link rel="stylesheet" href="../../youtube-dj-master/assets/css/style.css">
+    <link rel="stylesheet" href="../../youtube-dj-master/assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
+</head>
+<body>
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+<div>
+    <div class="resultDiv"></div>
+    <form action="{{ self }}" method="post">
+        Insérer video : <input type="text" id="newVid" name="videoUrlSearch">
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+<div id="player"></div>
+<section>
+    <ul>
+        {% for relatedVideo in relatedVideos %}
+            <li>
+                <h3> {{ relatedVideo['snippet']['title'] }} </h3>
+                <img src="{{ relatedVideo['snippet']['thumbnails']['default']['url'] }}" alt="test">
+                {#<button value="{{ relatedVideo['id']['videoId'] }}" class="related-button">Charger cette video</button>#}
+                <form action="{{ self }}" method="post">
+                    <input type="hidden" value="{{ relatedVideo['id']['videoId'] }}" name="videoId">
+                    <input type="submit" value="Envoyer">
+                </form>
+                <button value="{{ relatedVideo['id']['videoId'] }}" data-action="{{ self }}" class="envoie-ajax">Envoie AJAX</button>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../youtube-dj-master/assets/js/script.js"></script>
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: '{{ currentVideoId }}',
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+                'onError': onPlayerError,
+            }
+        });
+    }
+
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done = false;
+    function onPlayerStateChange(event) {
+
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    function onPlayerError() {
+        alert('mauvais lien');
+    }
+
+
+    $(".go-url").click(function () {
+        var newVideoValue = $('#newVid').val();
+        var newVideo = newVideoValue.substr(newVideoValue.indexOf("=") + 1);
+        player.loadVideoById( newVideo, 5, "large");
+        var time = player.getDuration();
+        console.log(time);
+
+    });
+
+
+    $(".envoie-ajax").click(function(){
+        var videoId = $(this).val();
+
+
+        $.ajax({
+            url: "{{ self }}",
+            data: "videoIdAjax="+videoId,
+            type: "POST",
+            dataType : "html",
+            success: function( data ) {
+                $('.resultDiv').load('ajax.php');
+
+            },
+            error: function( xhr, status ) {
+            },
+            complete: function( xhr, status ) {
+            }
+        });
+    });
+
+    /*$(".envoie-ajax").click(function(){
+        var videoId = $(this).val();
+
+
+        $.ajax({
+            url: "ajax.php",
+            data: "videoIdAjax="+videoId,
+            type: "POST",
+            dataType : "html",
+            success: function( data ) {
+                player.loadVideoById( data, 5, "large");
+
+            },
+            error: function( xhr, status ) {
+                              },
+            complete: function( xhr, status ) {
+            }
+        });
+    });*/
+
+
+</script>
+</body>
+</html>
