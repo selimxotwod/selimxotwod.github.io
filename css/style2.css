@@ -419,3 +419,21 @@ input[type='range']:focus {
     }
 }
 
+@media screen and (min-width: 1600px) {
+    section#search-and-related ul li {
+        width: 33.33%;
+        height: 250px;
+    }
+
+    section#search-and-related ul li img{
+        width: 100%;
+        height: 200px;
+    }
+
+
+
+    .filter{
+        height: 200px;
+    }
+}
+
