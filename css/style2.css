@@ -40,7 +40,7 @@ iframe{
 
 section#search-and-related{
     width: 100%;
-    margin-top: calc(100vh - 60vh);
+    margin-top: calc(100vh - 63vh);
     height: calc(100vh - 40vh);
     background: #4d3d93;
     background: -moz-linear-gradient(top, #4d3d93 0%, #6c57b2 100%);
@@ -148,7 +148,7 @@ section#search-and-related .list-search-block input{
     border: none;
     width: 90%;
     height: 100%;
-    background: url('../images/searchh.png') no-repeat scroll 10px 10px;
+    background: url('../img/searchh.png') no-repeat scroll 10px 10px;
     background-size: 25px;
     padding-left: 50px;
     font-size: 24px;
