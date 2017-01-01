@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4d4f4f04-4285-4d0d-a4c0-3d67c06934e5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style2.css" afterPath="$PROJECT_DIR$/css/style2.css" />
     </list>
     <ignored path="selimxotwod.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -224,12 +223,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1483199974587</updated>
-      <workItem from="1483199976952" duration="1484000" />
+      <workItem from="1483199976952" duration="1743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1484000" />
+    <option name="totallyTimeSpent" value="1743000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
