@@ -1,0 +1,110 @@
+body {
+  font-family: plain,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  color: black;
+  }
+
+.header {
+  color: black;
+  font-family: Futura;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0px
+}
+.footer {
+  padding: 30px;
+  background-color: black;
+  margin: 0 0 0 0;
+}
+.menu {
+  padding: 30px;
+  background-color: black;
+}
+.menu a {
+  color: #9E9E9E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+div .recherche {
+  float: right;
+  color: #9E9E9E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.ajout {
+  color: #9E9E9E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav {
+  width: 50px;
+  font-family: plain,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+
+}
+.picture {
+  width: 100%;
+  display: block;
+  margin-top: 90px;
+}
+.article {
+  font-size: 15px;
+  color: black;
+  margin: 40px 300px;
+  text-align: center;
+  text-decoration: none;
+}
+.article img {
+  width: 40%;
+}
+h1{
+  font-size: 20px;
+}
+h2 {
+  padding: 15px 0;
+  line-height: 20px;
+  font-weight: bold;
+}
+p {
+  line-height: 20px;
+}
+.detailsArt {
+  text-align: center;
+  margin: 20px;
+}
+.first {
+  float: left;
+  padding: 40px 20px;
+  width: 200px;
+}
+.second img {
+  float: left;
+  padding: 40px 20px;
+  width: 200px;
+}
+.third {
+  float: left;
+  padding: 40px 20px;
+  text-align: center;
+  width: 200px;
+}
+.edition {
+  text-align: center;
+  width: 100%;
+  clear: both;
+  padding: 30px;
+  background-color: #9E9E9E;
+}
+.edition a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0 200px;
+}

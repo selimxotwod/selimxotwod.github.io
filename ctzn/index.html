@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTZN | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="icon" type="image/png" href="img/favicon-2.ico" />
+</head>
+<body>
+
+<header class="white">
+    <a href="index.html" class="logo-white"><img src="img/logo-blanc.png"></a>
+    <nav>
+         <ul class="white menu animated">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="releases.html">RELEASES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <video autoplay muted loop poster="video.jpg" id="bgvid">
+        <source src="img/video.webm" type="video/webm">
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+
+
+    <audio id="background_audio"  loop autoplay="autoplay">
+        <source src="img/MZ2.ogg" type="audio/ogg">
+        <source src="img/MZ2crop.wav" type="audio/mpeg">
+    </audio>
+
+ <div >
+    <a href="about.html" id="skip" class="skip mute">SKIP</a>
+</div>
+
+<div class="mute">
+    <i class="card__btn-close fa fa-volume-up" onclick="mute()"></i>
+</div>
+
+<script>
+    function mute(){
+        var audio = document.getElementById("background_audio");
+        var icon_audio = document.querySelector("i");
+
+        if(audio.muted == false){
+            audio.muted = true;
+            icon_audio.setAttribute('class', 'card__btn-close fa fa-volume-off');
+
+        }else if(audio.muted == true){
+            audio.muted = false;
+            icon_audio.setAttribute('class', 'card__btn-close fa fa-volume-up');
+        }
+    }
+</script>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/menu.js"></script>
+
+
+</body>
+</html>

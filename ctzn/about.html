@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTZN | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/animsition.min.js"></script>
+    
+</head>
+<body>
+
+<header class="fullHeight">
+   <a href="index.html" class="logo-white"><img src="img/logo-noir.png"></a>
+    <nav>
+         <ul class="menu animated">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="releases.html">RELEASES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content fullHeight about animsition"
+     data-animsition-in-class="fade-in-right"
+     data-animsition-in-duration="1000"
+     data-animsition-out-class="fade-out-right"
+     data-animsition-out-duration="800">
+
+    <h1>ABOUT</h1>
+
+    <div class="wrap">
+        <div class="bg">
+             <p>The Paris-based collective, led by <strong>YHawks and Sélimo</strong>
+                has made a name for itself with powerful and bold aesthetics,
+                and introducing some of the French capital’s most prominent
+                electronic acts since 2011.</p>
+
+                <p><strong>LEYY, T-O, YHawks, Lil'Kim, Sélimo</strong>, 
+                have all debuted and evolved hand-in-hand with CTZN,
+                thus infusing their own genres and sensibilities
+                into the label’s catalog. Consequently, CTZN
+                stands more for an attitude rather than for a musical
+                style in itself, with a wide-open set of genres and influences 
+                : from YHawks’s experimental excursions rooted in “musique concrète”
+                to Sélimo’s purest ambient drones.
+                
+                </p>
+
+                <p>In 2016, the family is growing, as the label will announce
+                a handful of ambitious projects, among which :
+                a double album by LEYY, a collaborative double EP
+                by T-O and Lil'Kim, a double EP by Sélimo, 
+                and new projects by Leyy and YHawks, 
+                with remixes by Peder Mannerfelt, Abdulla Rashim, and Polar Inertia.
+
+                </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="particles-js"></div>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $(".animsition").animsition({
+            inClass: 'fade-in-right',
+            outClass: 'fade-out-right',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    });
+
+
+</script>
+
+
+</body>
+</html>

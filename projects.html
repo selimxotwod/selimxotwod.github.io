@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio Selim Cumur</title>
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="scss/main.scss">
+		<link rel="stylesheet" href="styles/PushMenu.css">
+		<link rel="stylesheet" href="styles/please-wait.css">
+		<link rel="stylesheet" href="styles/animate.min.css">
+		<link rel="stylesheet" href="styles/animsition.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="animsition"
+     data-animsition-in-class="fade-in"
+     data-animsition-in-duration="500"
+     data-animsition-out-class="fade-out-up"
+     data-animsition-out-duration="500">
+		<!--<div class="top-bar"></div>
+		<div class="bottom-bar"></div>
+		<div class="left-bar"></div>
+		<div class="right-bar"></div>
+		<a class="toggle-menu menu-top" href="#menu">
+			<img class="hvr-grow block menu-button" src="img/menu.png" onclick="switchIcon()">
+			<img class="hvr-grow hidden cross" src="img/cross.png" onclick="switchIcon()">
+		</a>-->
+
+		<div class="loader-inner ball-pulse"></div>
+
+		<button class="c-hamburger c-hamburger--htx toggle-menu menu-top">
+		  <span>toggle menu</span>
+		</button>
+		<nav class="top-menu cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top">
+			<ul>
+				<a href="index.html" 
+				class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"
+				 onclick="switchIcon()"><li class="top-nav-link hvr-shutter-out-vertical animated fadeInUp">HOME</li></a>
+				<a href="projects.html" 
+				class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"
+				onclick="switchIcon()"><li class="top-nav-link hvr-shutter-out-vertical animated fadeInUp">PROJETS</li></a>
+				<a href="contact.html" 
+				class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"
+				onclick="switchIcon()"><li class="top-nav-link last-li hvr-shutter-out-vertical animated fadeInUp">INFORMATIONS</li></a>
+			</ul>
+		</nav>
+		<nav class="navbar navbar-default sidebar" role="navigation">
+		    <div class="container-fluid">
+		    
+		    <a href="#project2"><div class="collapse navbar-collapse two" id="bs-sidebar-navbar-collapse-1" onmouseover="addFilter()" onmouseout="removeFilter()" onclick="removeFilter()"><div class="hvr2shutter-out-vertical"><div class="filter"></div><div class="nav-content"><div class="nav-img"><img src="img/ctzn.png"></div></div></div>
+		    </div></a>
+
+		    <a href="#project1"><div class="collapse navbar-collapse one" id="bs-sidebar-navbar-collapse-1" onmouseover="addFilter()" onmouseout="removeFilter()" onclick="removeFilter()"><div class="hvr1shutter-out-vertical"><div class="filter"></div><div class="nav-content"><div class="nav-img"><img src="img/uberr.png"></div></div></div>
+		    </div></a>
+
+		    <a href="#project3"><div class="collapse navbar-collapse three" id="bs-sidebar-navbar-collapse-1" onmouseover="addFilter()" onmouseout="removeFilter()" onclick="removeFilter()"><div class="hvr3shutter-out-vertical"><div class="filter"></div><div class="nav-content"><div class="nav-img"><img src="img/hetiquette.png"></div></div></div>
+		    </div></a>
+
+		     <a href="#project4"><div class="collapse navbar-collapse four" id="bs-sidebar-navbar-collapse-1" onmouseover="addFilter()" onmouseout="removeFilter()" onclick="removeFilter()"><div class="hvr4shutter-out-vertical"><div class="filter"></div><div class="nav-content"><div class="nav-img"><img src="img/laboite.png"></div></div></div>
+		    </div></a>
+
+		  </div>
+		</nav>
+
+		<div class="filter-fix"></div>
+
+		
+		<div class="projects window projet2" id="project2">
+			<section class="inner">
+				<div class="contentTwo">
+					<div class="filter"></div>
+					<div class="infos">
+						<div class="infos-content">
+							<img src="img/ctzn.png" class="animated fadeInUp" >
+						<h3 class="animated fadeInUp">INTÉGRATION</h3>
+							<div class="title"><h2 class="animated fadeInUp">LABEL DE MUSIQUE</h2><div class="button animated fadeInUp"><div class="glow"></div><a href="ctzn/index.html"
+							target="blank"
+								 onmouseover="gloww(0)" onmouseout="glowwOut(0)"
+								><div class="hovr-sweep-to-right">VOIR</div></a></div></div>
+							<div class="description">
+								<div class="left-title animated fadeIn">PROJET SCOLAIRE</div>
+								<div class="left animated fadeInUp">CTZN est le site d'un label de musique fictif produit lors d'une semaine intensive intégration à HETIC, sur le thème de la musique.</div><div class="right-title animated fadeIn">ÉQUIPE</div>
+								<div class="right animated fadeInUp">
+									<ul>
+										<li>CUMUR Selim</li>
+										<li>LORIDAN Clément</li>
+										<li>MOMBRUN Nino</li>
+										<li>BOURGOIN Théo</li>
+										<li>AGOSTIN Jean Baptiste</li>	
+									</ul>
+								 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</div>
+
+		<div class="projects window projet1" id="project1">
+			<section class="inner">
+				<div class="contentOne">
+					<div class="filter"></div>
+					<div class="infos">
+						<div class="infos-content">
+							<img src="img/uberr.png" class="animated fadeInUp">
+						<h3 class="animated fadeInUp">INTÉGRATION & JAVASCRIPT</h3>
+							<div class="title"><h2 class="animated fadeInUp">JEU DE COURSE</h2>
+								<div class="button animated fadeInUp"><div class="glow"></div><a href="uber-website/index.html" 
+								target="blank"
+								 onmouseover="gloww(1)" onmouseout="glowwOut(1)"><div class="hovr-sweep-to-right">VOIR</div></a></div></div>
+							<div class="description">
+								<div class="left-title animated fadeIn">PROJET SCOLAIRE</div>
+								<div class="left animated fadeInUp">UBER RACE est un jeu développé en Javascript lors d'une semaine intensive à HETIC, un site de présentation du jeu a également été produit au cours de la semaine.</div>
+								<div class="right-title animated fadeIn">ÉQUIPE</div>
+								<div class="right animated fadeInUp">
+									<ul>
+										<li>CUMUR Selim</li>
+										<li>MICHAY Robin</li>
+										<li>THOMAS Nans</li>
+										<li>DENIAU Benjamin</li>
+										<li>ZACCARDI Michael</li>
+									</ul> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</div>
+
+		<div class="projects window projet3" id="project3">
+			<section class="inner">
+				<div class="contentThree">
+					<div class="filter"></div>
+					<div class="infos">
+						<div class="infos-content">
+							<img src="img/hetiquette.png" class="animated fadeInUp">
+						<h3 class="animated fadeInUp">INTÉGRATION & PHP/SQL</h3>
+							<div class="title"><h2 class="animated fadeInUp">SITE DE CHAUSSURE</h2><div class="button animated fadeInUp"><div class="glow"></div><a href="hetiquette/index.php"
+							target="blank"
+								 onmouseover="gloww(2)" onmouseout="glowwOut(2)"
+								><div class="hovr-sweep-to-right">VOIR</div></a></div></div>
+							<div class="description">
+								<div class="left-title animated fadeIn">PROJET SCOLAIRE</div>
+								<div class="left animated fadeInUp">HETIQUETTE est un catalogue de chaussure de luxe produit lors d'une semaine intensive PHP/SQL à HETIC, après 1 mois de formation.</div><div class="right-title animated fadeIn">ÉQUIPE</div>
+								<div class="right animated fadeInUp">
+									<ul>
+										<li>CUMUR Selim</li>
+										<li>DELMAS Lucille</li>
+										<li>BELVEDERE Robin</li>
+										<li>NISOLE William</li>
+										<li>LIMACO Diego</li>
+									</ul></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</div>
+
+		<div class="projects window projet4" id="project4">
+			<section class="inner">
+				<div class="contentFour">
+					<div class="filter"></div>
+					<div class="infos">
+						<div class="infos-content">
+							<img src="img/arrete2.png" class="animated fadeInUp">
+						<h3 class="animated fadeInUp">PROJET DE FIN D'ANNÉE</h3>
+							<div class="title"><h2 class="animated fadeInUp">HISTOIRE DE PÈCHE </h2><div class="button animated fadeInUp"><div class="glow"></div><a href="http://www.histoiredepeche.fr"
+							target="blank"
+								onmouseover="gloww(3)" onmouseout="glowwOut(3)"
+								><div class="hovr-sweep-to-right">VOIR</div></a></div></div>
+							<div class="description">
+								<div class="left-title animated fadeIn">PROJET SCOLAIRE</div>
+								<div class="left animated fadeInUp">HISTOIRE DE PÈCHE est l'oeuvre de mon projet de fin d'année à HETIC.</div><div class="right-title animated fadeIn">ÉQUIPE</div>
+								<div class="right animated fadeInUp">
+									<ul>
+										<li>CUMUR Selim</li>
+										<li>BLANCAT Esther</li>
+										<li>TON Marie-Lise</li>
+										<li>PRIETO Hugo</li>
+										<li>MARQUAND Raphael</li>
+									</ul></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</div>
+
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/jquery.windows.js"></script>
+		<script src="scripts/please-wait.min.js"></script>
+		<script src="scripts/jPushMenu.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/jquery.waypoints.min.js"></script>
+		<script src="scripts/animsition.min.js"></script>
+    <script type="text/javascript">
+
+
+    $(document).ready(function(){
+
+    $('.window').windows({
+        snapping: true,
+        snapSpeed: 600,
+        snapInterval: 200,
+        onScroll: function(scrollPos){
+            // scrollPos:Number
+        },
+        onSnapComplete: function($el){
+            // after window ($el) snaps into place
+        },
+        onWindowEnter: function($el){
+            // when new window ($el) enters viewport
+        }
+    })
+    $('.toggle-menu').jPushMenu();
+
+    $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+
+});
+
+    var $nav = $('.navbar-collapse');
+
+    var $projet1 = $('.projet1');
+	var $one = $('.one');
+	var $projet2 = $('.projet2');
+	var $two = $('.two');
+	var $projet3 = $('.projet3');
+	var $three = $('.three');
+	var $projet4 = $('.projet4');
+	var $four = $('.four');
+
+	var $infoContent1 = $('.projet1 .infos-content');
+	var $infoContent2 = $('.projet2 .infos-content');
+	var $infoContent3 = $('.projet3 .infos-content');
+	var $infoContent4 = $('.projet4 .infos-content');
+
+
+	$projet1.waypoint(function(down){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$one.css( "background", "linear-gradient(to bottom,#E55151, #e44b4b)" );
+		$one.addClass("active");
+	});
+	$projet1.waypoint(function(down){
+		$infoContent1.css("display","block");
+	}, {offset: '20%'});
+
+
+	$projet2.waypoint(function(down){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$two.css( "background", "linear-gradient(to bottom,#af63f6, #a754f5)" );
+		$two.addClass("active");
+	});
+	$projet2.waypoint(function(down){
+		$infoContent2.css("display","block");
+	}, {offset: '20%'});
+
+
+	$projet3.waypoint(function(down){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$three.css( "background", "linear-gradient(to bottom,#3d98ff,#1582ff)" );
+		$three.addClass("active");
+	});
+	$projet3.waypoint(function(down){
+		$infoContent3.css("display","block");
+	}, {offset: '20%'});
+
+	$projet4.waypoint(function(down){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$four.css( "background", "linear-gradient(to bottom,#ecd855,#edd848)" );
+		$four.addClass("active");
+	});
+	$projet4.waypoint(function(down){
+		$infoContent4.css("display","block");
+	}, {offset: '20%'});
+
+
+
+
+	$projet1.waypoint(function(up){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$one.css( "background", "linear-gradient(to bottom,#E55151, #e44b4b)" );
+		$one.addClass("active");
+
+		$infoContent1.css("display","block");
+	}, {offset: -1});
+	$projet2.waypoint(function(up){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$two.css( "background", "linear-gradient(to bottom,#af63f6, #a754f5)" );
+		$two.addClass("active");
+
+		$infoContent2.css("display","block");
+	}, {offset: -1});
+	$projet3.waypoint(function(up){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$three.css( "background", "linear-gradient(to bottom,#3d98ff,#1582ff)" );
+		$three.addClass("active");
+
+		$infoContent3.css("display","block");
+	}, {offset: -1});
+
+	$projet4.waypoint(function(up){
+		$nav.css( "background", "rgba(255, 255, 255, 0.3)" );
+		$four.css( "background", "linear-gradient(to bottom,#3d98ff,#1582ff)" );
+		$four.addClass("active");
+
+		$infoContent4.css("display","block");
+	}, {offset: -1});
+
+
+		$(document).ready(function() {
+        $(".animsition").animsition({
+            
+            outClass: 'fade-out-up',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    });
+});
+
+ (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+  })();
+    	      	
+    </script>
+	</body>
+	</html>

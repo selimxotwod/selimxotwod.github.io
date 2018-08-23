@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio Selim Cumur</title>
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="scss/main.scss">
+		<link rel="stylesheet" href="styles/PushMenu.css">
+		<link rel="stylesheet" href="styles/animate.min.css">
+		<link rel="stylesheet" href="styles/animsition.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="animsition"
+     data-animsition-in-class="fade-in"
+     data-animsition-in-duration="500"
+     data-animsition-out-class="fade-out-up"
+     data-animsition-out-duration="500">
+		<div class="loader-inner ball-pulse"></div>
+
+		<button class="c-hamburger c-hamburger--htx toggle-menu menu-top">
+		  <span>toggle menu</span>
+		</button>
+		<nav class="top-menu cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top">
+			<ul>
+				<a href="index.html" 
+				class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"
+				onclick="switchIcon()"><li class="top-nav-link hvr-shutter-out-vertical animated fadeInUp">HOME</li></a>
+				<a href="projects.html" 
+				class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"
+				onclick="switchIcon()"><li class="top-nav-link hvr-shutter-out-vertical animated fadeInUp">PROJETS</li></a>
+				<a href="contact.html" 
+				class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"
+				onclick="switchIcon()"><li class="top-nav-link last-li hvr-shutter-out-vertical animated fadeInUp">INFORMATIONS</li></a>
+			</ul>
+		</nav>
+
+		<div class="filter-fix"></div>
+
+		
+		
+
+		<div class="footer window" id="footer">
+			<section class="inner">
+				<div class="footer-left">
+					<div class="footer-wrapper">
+						<h2><strong>SELIM</strong> CUMUR</h2>
+						<p>Étudiant en 1ère année à <span>HETIC</span>, passioné par la programmation et le design, je suis actuellement à la recherche d'un stage et d'une altèrnance en développement front-end pour juillet 2016.</br>
+						Je reste à votre disposition pour plus d'informations.
+						</p>
+
+						<a href="img/cv.pdf" target="blank"><div class="hvr-sweep-to-right">CV.PDF</div></a>
+
+						<p class="credit">Ce portfolio a été développé par <span>Selim Cumur</span></p>
+
+					</div>	
+				</div>
+				<div class="footer-right">
+					<div class="footer-wrapper">
+						<div class="contact">
+							<h2>CONTACT</h2>
+							 <form id="form" action="" class="topBefore">
+						        <input id="name" type="text" placeholder="NOM ET PRENOM">
+						        <input id="email" type="text" placeholder="E-MAIL">
+						        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+						        <input id="submit" type="submit" value="ENVOYER">
+						    </form>
+						</div>
+					</div>
+				</div>
+			</section>	
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/jquery.windows.js"></script>
+		<script src="scripts/please-wait.min.js"></script>
+		<script src="scripts/jPushMenu.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/jquery.waypoints.min.js"></script>
+		<script src="scripts/animsition.min.js"></script>
+    <script type="text/javascript">
+
+
+    $(document).ready(function(){
+
+    $('.window').windows({
+        snapping: true,
+        snapSpeed: 600,
+        snapInterval: 200,
+        onScroll: function(scrollPos){
+            // scrollPos:Number
+        },
+        onSnapComplete: function($el){
+            // after window ($el) snaps into place
+        },
+        onWindowEnter: function($el){
+            // when new window ($el) enters viewport
+        }
+    })
+    $('.toggle-menu').jPushMenu();
+
+    $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+
+});
+
+    var $nav = $('.navbar-collapse');
+
+    var $projet1 = $('.projet1');
+	var $one = $('.one');
+	var $projet2 = $('.projet2');
+	var $two = $('.two');
+	var $projet3 = $('.projet3');
+	var $three = $('.three');
+
+	var $infoContent1 = $('.projet1 .infos-content');
+	var $infoContent2 = $('.projet2 .infos-content');
+	var $infoContent3 = $('.projet3 .infos-content');
+
+
+	$projet1.waypoint(function(down){
+		$nav.css( "background-color", "rgba(255, 255, 255, 0.3)" );
+		$one.css( "background-color", "#E55151" );
+		$one.addClass("active");
+	});
+	$projet1.waypoint(function(down){
+		$infoContent1.css("display","block");
+	}, {offset: '20%'});
+
+
+	$projet2.waypoint(function(down){
+		$nav.css( "background-color", "rgba(255, 255, 255, 0.3)" );
+		$two.css( "background-color", "#B251E5" );
+		$two.addClass("active");
+	});
+	$projet2.waypoint(function(down){
+		$infoContent2.css("display","block");
+	}, {offset: '20%'});
+
+
+	$projet3.waypoint(function(down){
+		$nav.css( "background-color", "rgba(255, 255, 255, 0.3)" );
+		$three.css( "background-color", "#5151E5" );
+		$three.addClass("active");
+	});
+	$projet3.waypoint(function(down){
+		$infoContent3.css("display","block");
+	}, {offset: '20%'});
+
+
+
+
+	$projet1.waypoint(function(up){
+		$nav.css( "background-color", "rgba(255, 255, 255, 0.3)" );
+		$one.css( "background-color", "#E55151" );
+		$one.addClass("active");
+
+		$infoContent1.css("display","block");
+	}, {offset: -1});
+	$projet2.waypoint(function(up){
+		$nav.css( "background-color", "rgba(255, 255, 255, 0.3)" );
+		$two.css( "background-color", "#B251E5" );
+		$two.addClass("active");
+
+		$infoContent2.css("display","block");
+	}, {offset: -1});
+	$projet3.waypoint(function(up){
+		$nav.css( "background-color", "rgba(255, 255, 255, 0.3)" );
+		$three.css( "background-color", "#5151E5" );
+		$three.addClass("active");
+
+		$infoContent3.css("display","block");
+	}, {offset: -1});
+
+
+  /* window.addEventListener("scroll", function (e){
+	
+	window.scrollTo(0,0);
+	
+}, false);*/
+
+	$(document).ready(function() {
+        $(".animsition").animsition({
+            outClass: 'fade-out-up',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    }); 
+});
+
+ (function() {
+
+    "use strict";
+
+    var toggles = document.querySelectorAll(".c-hamburger");
+
+    for (var i = toggles.length - 1; i >= 0; i--) {
+      var toggle = toggles[i];
+      toggleHandler(toggle);
+    };
+
+    function toggleHandler(toggle) {
+      toggle.addEventListener( "click", function(e) {
+        e.preventDefault();
+        (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      });
+    }
+
+  })();
+
+
+ 
+    	   
+   	
+    </script>
+	</body>
+	</html>

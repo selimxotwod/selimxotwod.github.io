@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTZN | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/animsition.min.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-white"><img src="img/logo-noir.png"></a>
+    <nav>
+         <ul class="menu animated">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="releases.html">RELEASES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content fullHeight animsition"
+  data-animsition-in-class="fade-in-right"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="800">
+    <div class="container">
+        <div class="news_container_article">
+            <h3>LEYY Kinematics EP is out.</h3>
+            <a href="news.html" class="animsition-link retour">Retour</a>
+            <div class="img_news_article">
+                <img src="img/party.jpg">
+            </div>
+            <div class="infos_news_article">
+    <p>There is definitely something mysterious about Hiss:1292, and unlike a number of other techno projects, it is not the identity of the two producers at stake here.</p>
+<p>It has never been concealed : the guys behind the curtains are Opuswerk and Francois X. The latter is found at postal codes between 1200 and 1209 in Switzerland, the second in 92… right near Paris. Hence 1292.</p>
+<p>Nobody’s hiding here….</p>
+<p>Nobody ? Well, not quite. For this new project at least hides something, or some mysterious spirits that may have chosen to haunt these vinyl grooves. Four of them to be correct ; namely Augun, Damballah, Eshu and Simbi ; four Veves of the Dahomey and Yoruba Vodoo traditions, four complex and intense spirits that have seized Hiss:1292’s music to make it their own.</p>
+<p>It is often the intuition of similarities between voodoo and techno that pushes some producers to chose their tracks names with Vodun keywords. Indeed, intense experiences one can endure in some effective techno installment can sometimes approach the mental images we have of Voodoo trance and seizures.</p>
+<p>Here, the process has been different. The voodoo theme was unintended at first, but it seemed like a spell had been cast on the record, and the artists were bound to name their music after the spirits that dwell within.If you are curious enough to read a little about Augun, Damballah, Eshu, and Simbi while you listen to the EP, you’ll probably get an eerie feeling, the machine feel of techno will start to peel off, and you’ll get the strange impression you’re listening to something else.</p>
+<p>And don’t you worry. The way it has been arranged, those spells should all be very benign…</p>
+<p>The vinyl comes with an inner sleeve, where the sequel of the Hiss:1292 conceptual comic strip by Matthieu Cannavo has been printed..</p>
+<p>The vévés’ glyphs have also been represented by the creation of typographic characters, and the skull-makeup-suggestive artwork is accidental wall paint from the future DEMENT3D studios…</p>
+<p>We hope you’ll get enthralled as much as we did in this one !.</p>
+<p>Release date : <strong>10th november</strong></p>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+ 
+ $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-right',
+    outClass: 'fade-out-right',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+
+
+</script>
+
+
+</body>
+</html>

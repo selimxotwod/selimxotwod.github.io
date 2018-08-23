@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTZN | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/animsition.min.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-white"><img src="img/logo-noir.png"></a>
+    <nav>
+         <ul class="menu animated">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="releases.html">RELEASES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content fullHeight animsition"   class="animsition"
+  data-animsition-in-class="fade-in-right"
+  data-animsition-in-duration="1000"
+  data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="800">
+    <div class="container">
+        <div class="title">
+            <h1>News</h1>
+        </div>
+
+        <div class="news_container">
+            <div class="img_news">
+                <img src="img/party.jpg">
+                <div class="date_article">
+                    <p class="num_date">20</p>
+                    <p class="mois_date">DEC</p>
+                </div>
+            </div>
+            <div class="infos_news">
+                <h3>LEYY Kinematics EP is out.</h3>
+                <p>It is often the intuition of similarities between voodoo and techno that pushes some producers to chose their tracks names with Vodun keywords.</p>
+                <a class="animsition-link" href="news_one.html"  >[Voir plus]</a>
+            </div>
+        </div>
+    
+        <div class="news_container">
+            <div class="img_news">
+                <img src="img/party2.jpg">
+                <div class="date_article">
+                    <p class="num_date">17</p>
+                    <p class="mois_date">DEC</p>
+                </div>
+            </div>
+            <div class="infos_news">
+                <h3>CTZNLIVE #004 - Secret Warehouse Paris</h3>
+                <p>Welcoming the young duo in our label’s shelf had become obvious : their tracks have very often found their way in our DJ sets.</p>
+                <a class="animsition-link" href="news_two.html">[Voir plus]</a>
+            </div>
+        </div>
+            
+        <div class="news_container">
+            <div class="img_news">
+                <img src="img/party3.jpg">
+                <div class="date_article">
+                    <p class="num_date">15</p>
+                    <p class="mois_date">DEC</p>
+                </div>
+            </div>
+            <div class="infos_news">
+                <h3>CTZNLIVE #003 - Secret Warehouse Paris</h3>
+                <p>Welcoming the young duo in our label’s shelf had become obvious : their tracks have very often found their way in our DJ sets.</p>
+                <a class="animsition-link" href="news_three.html">[Voir plus]</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+ $(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in-right',
+    outClass: 'fade-out-right',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+</script>
+<script src="js/menu.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTZN | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.3/css/simple-line-icons.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/animsition.min.js"></script>
+</head>
+<body>
+
+<header class="fullHeight">
+    <a href="index.html" class="logo-white"><img src="img/logo-noir.png"></a>
+    <nav>
+         <ul class="menu animated">
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="releases.html">RELEASES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content fullHeight about animsition contact"
+     data-animsition-in-class="fade-in-right"
+     data-animsition-in-duration="1000"
+     data-animsition-out-class="fade-out-right"
+     data-animsition-out-duration="800">
+
+    <h1>CONTACT</h1>
+    
+    <form id="form" class="topBefore">
+
+        <input id="name" type="text" placeholder="NAME">
+        <input id="email" type="text" placeholder="E-MAIL">
+        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+        <input id="submit" type="submit" value="SEND">
+
+    </form>
+    
+      <div class="info_contact">
+    <p>OR :<br>
+    Adress : 27 Rue du Progrès, Montreuil 93100<br>
+    E-mail : CTZN@label.com<br>
+    Tel : 06 36 15 38 49</p>
+    
+    
+    <a href="myfile.htm"><div class="icon-social-facebook mediaso" ></a>
+      
+    </div>
+   <a href="myfile.htm"> <div class="icon-social-twitter mediaso" ></a>
+      
+    </div>
+    <a href="myfile.htm"><div class="icon-social-instagram mediaso" ></a>
+      
+    </div>
+    <a href="myfile.htm"><div class="icon-social-soundcloud mediaso" ></a>
+      
+    </div>
+    </div>
+
+</div>
+
+
+
+<div id="particles-js"></div>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/menu.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $(".animsition").animsition({
+            inClass: 'fade-in-right',
+            outClass: 'fade-out-right',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    });
+
+
+</script>
+<script src="js/contact.js"></script>
+
+
+</body>
+</html>

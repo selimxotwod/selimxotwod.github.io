@@ -1,0 +1,140 @@
+body {
+  font-family: plain,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  color: black;
+  width: 100%;
+  }
+.header {
+  color: black;
+  font-family: Futura;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.nav{
+  vertical-align: middle;
+  text-align: center;
+  padding: 30px;
+}
+.nav a {
+  font-family: plain,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+  padding: 0 100px;
+}
+.footer {
+  padding: 20px;
+  background-color: black;
+}
+.picture {
+  width: 100%;
+  display: block;
+  margin-top: 90px;
+}
+.menu{
+  padding: 30px;
+  background-color: black;
+  color: #9E9E9E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 90px;
+
+}
+.ajout{
+  color: #9E9E9E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.recherche {
+  float: right;
+}
+.page {
+  clear: both;
+  text-align: center;
+  margin: 50px;
+}
+.article {
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 500px;
+}
+.imageArt {
+  display: block;
+}
+.imageArt img {
+  width: 300px;
+}
+.introArt {
+  display: block;
+}
+h1{
+  font-size: 20px;
+}
+h2 {
+  padding: 15px 0;
+  line-height: 20px;
+  font-weight: bold;
+}
+p {
+  line-height: 20px;
+}
+
+
+.menu a {
+  color: #9E9E9E;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.detailsArt {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  text-align: center;
+  clear: both;
+}
+.first {
+  float: left;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.second img {
+  position: center;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+
+}
+.third {
+  float: right;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.edition {
+  text-align: center;
+  clear: both;
+  padding: 30px;
+  background-color: #9E9E9E;
+}
+.edition a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 0 100px;
+}

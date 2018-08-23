@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio Selim Cumur</title>
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="scss/main.scss">
+		<link rel="stylesheet" href="styles/PushMenu.css">
+		<link rel="stylesheet" href="styles/please-wait.css">
+		<link rel="stylesheet" href="styles/animate.min.css">
+		<link rel="stylesheet" href="styles/animsition.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700,800,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body class="animsition"
+    
+     data-animsition-out-class="fade-out-up"
+     data-animsition-out-duration="600">
+
+		<div class="filter-fix"></div>
+		<div class="header window" id="header">
+			<a href="contact.html" class="animsition-link"
+				data-animsition-out-class="fade-out"
+				data-animsition-out-duration="500"><div class="hvr-sweep-to-right">INFORMATIONS</div></a>
+			<section class="inner">
+				<div class="content">
+					<h1>Selim <span>Cumur</span></h1>
+					<h2>WEB DEVELOPER</h2>
+					<!--<a href=""><span class="icon-noun_54414_cc"></span></a>-->
+					<a href="projects.html" class="animsition-link"><div class="hvr-sweep-to-bottom">MES PROJETS</div></a>
+				</div>
+			</section>	
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/jPushMenu.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/animsition.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+        $(".animsition").animsition({
+            
+            outClass: 'fade-out-up',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+            loading: true,
+            loadingParentElement: 'body', //animsition wrapper element
+            loadingClass: 'animsition-loading',
+            loadingInner: '', // e.g '<img src="loading.svg" />'
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+            // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'body',
+            transition: function(url){ window.location.href = url; }
+        });
+    });
+		</script>
+		
+	</body>
+	</html>

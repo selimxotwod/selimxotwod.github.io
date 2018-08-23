@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<title>TEST</title>
+		<link rel="stylesheet" href="styles/reset.css">
+
+		<link rel="stylesheet" href="styles/fakeLoader.css">
+		
+		<style type="text/css">
+			body,html{
+			    height: 100%;
+			    margin: 0;
+    padding: 0;
+   font-family: 'Open Sans', sans-serif;
+			  }
+			  .header {
+    position: relative;
+    height: 100%
+}
+
+.inner {
+    background:#fff; 
+	background-size: cover;
+    z-index: 10;
+    margin: 0;
+    height: 100%;
+    border-bottom: none;
+    border-top: none
+    background-image: url('../img/geo.jpg');
+	background-size: cover;
+}
+.header .content{
+	    margin-top: 50vh;
+    webkit-transform: -webkit-translateY (-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.header .content h1{
+	font-size: 92px;
+	color: #000;
+	text-align: center;
+	font-weight: 300;
+}
+
+.header .content h1 span{
+	font-size: 92px;
+	color: #000;
+	text-align: center;
+	font-weight: 600;
+}
+
+.header .content h2{
+	font-family: Titillium-Light;
+	font-size: 12px;
+	color: #cc9246;
+	text-align: center;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+
+.hvr-sweep-to-right {
+	width:100px;
+	height:40px;
+	-webkit-transform:skew(-10deg);
+	-moz-transform:skew(30deg);
+	-o-transform:skew(30deg);
+	tranform:skew(30deg);
+	border: #000 solid 2px ;
+	margin: auto;
+	margin-top: 20px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	vertical-align: middle;
+	clear: both;  
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: #FFF;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.icon-noun_54414_cc:before {
+    content: "\e900";
+    color: #000;
+	font-size: 27px;
+	margin: auto;
+	width: 20px;
+	display: block;
+	margin-top: 150px;
+}
+
+.heady{
+	position: relative;
+	z-index: 1000;
+	height: 100%;
+	
+	background-size: cover;
+}
+			
+
+		</style>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scripts/jquery.waypoints.min.js"></script>	
+		<script src="scripts/fakeLoader.min.js"></script>
+		<script>
+			$("#fakeloader").fakeLoader({
+	timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+	zIndex:"999",//Default zIndex
+	spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+	bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+	imagePath:"img/selimY.png" //If you want can you insert your custom image
+	});
+		</script>
+	</head>
+	<body>
+	
+		<div class="header window" id="header">
+			<section class="inner">
+				<div class="heady">
+				<div class="content">
+					<h1>Selim <span>Cumur</span></h1>
+					
+					<!--<a href=""><span class="icon-noun_54414_cc"></span></a>-->
+					<a href="#project1"><div class="hvr-sweep-to-right">MES PROJETS</div></a>
+				</div>
+			</div>
+			</section>	
+		</div>
+	</body>
+</html>
